@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --theme-clr: #FF5400;
+    
+}
+
+
+.mulish-font {
+    font-family: "Mulish", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Shared style */
+
+header {
+    margin: 0 auto;
+}
+
+.theme-txt-clr{
+    color: var(--theme-clr);
+}
+
+
+
+
+
+
+
+
+
+/* header nav style */
+
+.hero{
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.3rem auto;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2.9rem;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-title{
+    font-weight: 800;
+    font-size: 2.38rem;
+}
+
+.nav-links{
+    text-transform: capitalize;
+    color: #424247;
+}
+
+.home-link{
+    color: var(--theme-clr);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    .hero,
+    .nav-links{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .hero{
+        gap: 1.5rem;
+    }
+    
+}
+
+
+
+
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .hero{
+        max-width: 800px;
+    }
+
+    .nav-links{
+        gap: 1.5rem
+    }
+
+}
